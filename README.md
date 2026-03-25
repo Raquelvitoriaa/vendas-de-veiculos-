@@ -1,37 +1,56 @@
-# vendas-de-veiculos-em-C
+**Sistema de Venda de Veículos**
 
-#include <stdio.h>
-#include <string.h>
+✍️🏼 **Visão Geral**
+O Sistema de Venda de Veículos é uma aplicação desenvolvida em linguagem C, focada na gestão de estoque, clientes e processamento de transações comerciais para concessionárias ou revendas de automóveis. O sistema permite o controle total desde a entrada do veículo no pátio até a finalização da venda ao consumidor final.
 
-typedef struct {
-    int id;
-    char nome[50];
-    char apelido[50];
-    int numtelefone;
-    char sexo;
-    char endereco;
-    int numeroCPF;
-    char situacao;
-} cliente;
+🎯 **Objetivo**
+O sistema tem como principais objetivos:
+*   Gerenciar o inventário de veículos de forma organizada.
+*   Manter um histórico de clientes e suas aquisições.
+*   Controlar o fluxo de vendas e reservas de automóveis.
+*   Gerar relatórios básicos de faturamento e disponibilidade.
 
-int main() {
-    
-    cliente listaClientes[200];
+🧑‍🧑‍🧒‍🧒 **Público-Alvo**
+*   Vendedores de concessionárias.
+*   Gerentes de estoque e administradores de revendas de veículos.
 
-    listaClientes[0].id = 1;
-    strcpy(listaClientes[0].nome, "Raquel vitoria");
+🫆 **Funcionalidades**
 
-    printf("Clientes 1: %s \n", listaClientes[200].nome);
-}
+☑️ **1. Cadastro de Clientes**
+Permite armazenar os dados dos compradores:
+*   Nome completo.
+*   CPF ou CNPJ (único).
+*   Telefone de contato.
+*   E-mail e Endereço.
 
-struct automovel {
+☑️ **2. Gestão de Estoque (Veículos)**
+Permite cadastrar e editar veículos com os seguintes dados:
+*   Marca e Modelo.
+*   Ano de fabricação / Ano do modelo.
+*   Placa (identificador único).
+*   Chassi.
+*   Cor.
+*   Preço de venda.
 
-    int clienteid;
-    char marca[100];
-    char modelo[100];
-    char matricula[17];
-    int classeveiculo;
-    char cor[50];
-    char combustivel[50];
-    int ano;
-}
+☑️ **3. Controle de Status do Veículo**
+Essencial para a dinâmica da loja:
+*   🟢 **Disponível** → No pátio e pronto para venda.
+*   🔵 **Reservado** → Aguardando aprovação de crédito ou sinal de pagamento.
+*   🔴  **Vendido** → Veículo não disponível, vinculado a um comprador.
+*   ⚪ **Em Manutenção** → Veículo em preparação/oficina antes de ir para o pátio.
+
+☑️ **4. Processamento de Vendas**
+*   Associação automática entre **Cliente (CPF) ↔ Veículo (Placa)**.
+*   Registro da data da venda.
+*   Definição da forma de pagamento (À vista, Financiamento, Troca).
+
+☑️ **5. Busca e Filtros (Adicional)**
+*   Pesquisa de veículos por marca ou modelo.
+*   Filtro de veículos por faixa de preço.
+
+☑️ **6. Relatórios de Desempenho (Adicional)**
+*   Listagem de todos os veículos vendidos.
+*   Cálculo do valor total em estoque (soma dos preços dos veículos disponíveis).
+
+👩‍💻 **Tecnologias Utilizadas**
+**Linguagem C**
