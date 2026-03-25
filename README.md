@@ -1,4 +1,4 @@
-**Sistema de Venda de Veículos**
+🚘 **Sistema de Venda de Veículos**
 
 ✍️🏼 **Visão Geral**
 O Sistema de Venda de Veículos é uma aplicação desenvolvida em linguagem C, focada na gestão de estoque, clientes e processamento de transações comerciais para concessionárias ou revendas de automóveis. O sistema permite o controle total desde a entrada do veículo no pátio até a finalização da venda ao consumidor final.
@@ -53,4 +53,5 @@ Essencial para a dinâmica da loja:
 *   Cálculo do valor total em estoque (soma dos preços dos veículos disponíveis).
 
 👩‍💻 **Tecnologias Utilizadas**
+
 **Linguagem C**
