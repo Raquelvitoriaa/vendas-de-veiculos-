@@ -52,6 +52,5 @@ Essencial para a dinâmica da loja:
 *   Listagem de todos os veículos vendidos.
 *   Cálculo do valor total em estoque (soma dos preços dos veículos disponíveis).
 
-👩‍💻 **Tecnologias Utilizadas**
-
-**Linguagem C**
+👩‍💻 **Tecnologias Utilizadas:**
+     **Linguagem C**
