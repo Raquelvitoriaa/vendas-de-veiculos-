@@ -1,1 +1,39 @@
-# Teste para o projeto:
+//Teste para o projeto:
+
+#include <stdio.h>
+
+typedef struct {
+    char nome[50];
+    char endereco[50];
+    char sexo;
+    int idade;
+    int numTelefone;
+    int numCPF;
+
+
+}Cliente;
+
+typedef struct {
+     int ClienteID;
+     char marca[50];
+     char modelo[50];
+     int classeVeiculo;
+     char cor;
+     int ano;
+
+}Veiculo;
+
+
+int main() {
+    int status = 1;
+    while(status) {
+        printf("Escolha uma opcao: ");
+        int opcao;
+        scanf("%d", &opcao);
+    
+        switch(opcao) {
+            case 1:
+                break;
+
+    return 0;
+}
