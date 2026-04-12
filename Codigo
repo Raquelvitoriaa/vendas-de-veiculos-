@@ -6,17 +6,13 @@
 #include <time.h>
 #include <conio.h>
 
-#define DISPONIVEL 
-#define 
-#define 
-#define 
+#define DISPONIVEL 1
+#define RESERVADO 2
+#define VENDIDO 3
+#define MANUTENÇÃO 0
 
-#define MAX_VEICULOS 100
-#define MAX_CLIENTES 100
-#define ARQUIVO_DADOS "veículos.dat"
+//Estrutura para cliente
 
-
-//Estrutura para representar um cliente
 typedef struct {
     char nome[50];
     char endereco[50];
@@ -27,7 +23,8 @@ typedef struct {
 }Cliente;
 
 
-//Estrutura para representar um Veiculo
+//Estrutura para Veiculo
+
 typedef struct {
      int ClienteID;
      char marca[50];
@@ -40,6 +37,7 @@ typedef struct {
 
 
 //Protótipo das funções
+
 void menu_principal();
 void cadastrar_veiculo();
 void resevar_veiculo();
@@ -70,4 +68,4 @@ void menu_principal() {
        printf("1. Cadastrar veiculo\n");
        printf("2. Reservar veiculo\n");
        printf("3. Consultar Disponibilidade\n);
-       printf("4. Li");
+       printf("4. Listar Reservas\n");
