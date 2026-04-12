@@ -6,6 +6,10 @@
 #include <time.h>
 #include <conio.h>
 
+#define DISPONIVEL 
+#define 
+#define 
+#define 
 
 #define MAX_VEICULOS 100
 #define MAX_CLIENTES 100
